@@ -120,3 +120,12 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
         export default App;
 
 4. add style sheet CDN link in public/index.html
+
+   index.html is related to index.js
+   
+           import ReactDOM from 'react-dom';
+
+                ReactDOM.render(
+                  元件,
+                  document.getElementById('root')
+
