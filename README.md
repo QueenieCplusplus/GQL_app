@@ -44,3 +44,77 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
                   </ApolloClient>,
                   document.getElementById('root')
                 );
+
+3. // component_name.js
+
+ use { useQuery } hook , which is a hook to fetch gql query and expose result to render
+
+        import React from 'react';
+        import logo from './logo.svg';
+        import './App.css';
+
+        import { useQuery } from '@apollo/react-hooks';
+        import gql from 'graphql-tag';
+
+        import {Fragment} from 'React';
+
+
+        // to fetch data of first 10 users
+        const GET_INFO = gql`
+        {
+          user(first:10){
+            name,
+            avatar,
+            mail,
+            phone_number,
+            detail {
+              fb_id,
+              twitter_id
+            }
+          }
+        }
+        `
+        function App() {
+
+          const {data, loading, error} = useQuery(GET_INFO);
+
+          if(loading) return <p> Loading... </p>
+          if(error) return <p> Error </p>
+
+
+          return (
+
+             // map((val, index, array) => ())
+            <Fragment>
+              <div>
+                {data && data.user && data.user.map((res_val, index) =>(
+
+                  <div>
+
+                    <p>{res_val.name}</p>
+
+                    <p>{res_val.detail && res_val.detail.length !== 0 && (
+                      <p>
+                      {""}
+
+                      Users Detail:
+
+                      {res_val.detail.map((sub_res_val, index)=>{
+
+                          return <p key={index}> {sub_res_val.fb_id} </p>;
+
+                      })}
+                      </p>
+                    )}</p>
+
+                  </div>
+
+                ))}
+
+              </div>
+            </Fragment>
+
+          );
+        }
+
+        export default App;
