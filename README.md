@@ -3,6 +3,57 @@ Graph QL
 
 ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
+# user GQL API
+
+        import { request } from 'graphql-request'
+
+        var a_query_type = `
+
+           query listUsersInfo {
+
+                allUsers {
+
+                    name
+                    avatar
+
+                }
+
+           }
+
+
+        `
+
+        var a_mutaion_type = `
+
+            mutation pop($id: Int!){
+
+                addUser(id: $id){
+
+                    id 
+                    name
+                    mailaddress
+
+
+                }
+
+            }
+
+        `
+
+        request('http://localhost:4000/user', a_query_type)
+                .then(cosole.log)
+                .catch(console.error)
+
+        let url = 'http://localhost:4000/user'
+
+        var vary_id = {id: 318}
+
+        request(url, mutation, vary_id)
+                .then(console.log)
+                .catch(console.error)
+
+
+# Code
 
 1. add dependency
 
