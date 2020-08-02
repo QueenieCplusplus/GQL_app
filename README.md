@@ -71,7 +71,7 @@ Apollo 支援 React、 iOS、 Android。
           
           })
 
-# use GQL API
+# use GQL API, Query & Mutation
 
 使用 Query 元件對資料 select ; 使用 Mutation 元件對資料做 update, delete, create。
 使用時會先創建 gql 特有的 type，如下的 a_mutaion_type 和 a_query_type。
