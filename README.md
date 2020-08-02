@@ -47,7 +47,7 @@ Apollo 支援 React、 iOS、 Android。
           if(localStorage['apollo-cache-persist']){
                 
                 let cacheData = JSON.parse(localStorage['apollo-cache-persist'])
-                cache.restore(cacheData)
+                cache.restore(cacheData)// 呼叫此 restore 方法，可以讓快取資料添加到快取實例。
           
           }
   
