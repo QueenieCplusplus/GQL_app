@@ -3,6 +3,10 @@ Graph QL
 
 ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
+# Apollo || Relay
+
+Relay 是 FB 研發作為串接 GQL 與 React 的框架，也推薦使用。
+
 # user GQL API
 
         import { request } from 'graphql-request'
