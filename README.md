@@ -16,9 +16,11 @@ Apollo 支援 React、 iOS、 Android。
 
 * Apollo Client
 
-         import { gql } from 'apollo-boost'
+         import { gql } from 'apollo-boost';
 
 * Apollo Cache
+
+         import { InMemoryCache } from 'apollo-boost';
 
   * 使用 Cache: 能減少網路請求，避免使用者發出無關緊要的請求。
   
@@ -29,6 +31,12 @@ Apollo 支援 React、 iOS、 Android。
                 並且同時發出網路請求。
   
   * 保存 Cache
+  
+          import { persistCache } from 'apollo-cache-persist';
+          
+          const = cache = new InMemoryCache();
+          
+          pesistCache({cache, storage: localStorage})
   
   * 更新 Cache
 
