@@ -50,8 +50,26 @@ Apollo 支援 React、 iOS、 Android。
                 cache.restore(cacheData)// 呼叫此 restore 方法，可以讓快取資料添加到快取實例。
           
           }
+          
+  * 讀取 Cache 
   
-  * 更新 Cache
+          let {col1, col2, col3} = cache.readQuery({query: 請輸入GQL資料型態}) //回傳值可裝入依照欄位區分的變數物件容器
+  
+  * 寫入(更新) Cache
+  
+          cache.writeQuery({
+          
+            query: 請輸入GQL資料型態,
+            data:{
+            
+              col1: null,
+              col2: [],
+              col3: 0
+            
+            }
+           
+          
+          })
 
 # use GQL API
 
