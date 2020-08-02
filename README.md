@@ -324,16 +324,6 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
    * apollo-upload-server 免加載，已內建伺服器端，處理由 client 端傳送檔案給伺服器端，可捕捉 stream、mimetype，處理 encode 編碼。
      
    https://github.com/QueenieCplusplus/GQL_api
-
-# Security 安全性
-
- * request timeout 避免大量或者惡意的查詢。
- 
- * max size 限制上傳資料的大小。
- 
- * 限制查詢深度
- 
- * 限制查詢複雜度
  
    
 # Pub/Sub || Subscription 訂閱服務或監聽狀態服務 (即時資料傳輸)
@@ -354,3 +344,13 @@ HTTP 雖然提供用戶端與伺服器端傳送與接收資料的手段，但 Ht
 # githubAuth Codebase 第三方登入功能
 
   (to be continued...)
+  
+# Security 安全性
+
+ * request timeout 避免大量或者惡意的查詢。
+ 
+ * max size 限制上傳資料的大小。
+ 
+ * 限制查詢深度
+ 
+ * 限制查詢複雜度
