@@ -317,8 +317,18 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
                   document.getElementById('root')
 
 
+  
+# PubSub 訂閱服務
+
+
 # githubAuth Codebase
 
   (to be continued...)
-  
-# PubSub 訂閱服務
+
+# upload File 上傳檔案
+
+  (to be continued...)
+
+# post Photo 張貼照片
+
+  (to be continued...)
