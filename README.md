@@ -20,6 +20,8 @@ Apollo 支援 React、 iOS、 Android。
 
 * Apollo Cache
 
+         //使用 apollo-boost 提供 InMemoryCache 建構式建立快取實例。
+
          import { InMemoryCache } from 'apollo-boost';
 
   * 使用 Cache: 能減少網路請求，避免使用者發出無關緊要的請求。
@@ -32,6 +34,9 @@ Apollo 支援 React、 iOS、 Android。
   
   * 保存 Cache
   
+          // 從 apollo-cache-persist 匯入 persistCache 方法，將 cache 實例連同 storage 位置一同傳入
+          // persistCache 方法。
+
           import { persistCache } from 'apollo-cache-persist';
           
           const = cache = new InMemoryCache();
