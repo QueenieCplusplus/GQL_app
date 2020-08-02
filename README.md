@@ -16,7 +16,15 @@ Apollo 支援 React、 iOS、 Android。
 
 * Apollo Client
 
+         import { gql } from 'apollo-boost'
+
 * Apollo Cache
+
+  * 使用 Cache
+  
+  * 保存 Cache
+  
+  * 更新 Cache
 
 # use GQL API
 
