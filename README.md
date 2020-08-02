@@ -341,6 +341,6 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 (to be continued...)
 
 
-# githubAuth Codebase
+# githubAuth Codebase 第三方登入功能
 
   (to be continued...)
