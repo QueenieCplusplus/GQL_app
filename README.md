@@ -20,7 +20,11 @@ Apollo 支援 React、 iOS、 Android。
 
 * Apollo Cache
 
-  * 使用 Cache
+  * 使用 Cache: 能減少網路請求，避免使用者發出無關緊要的請求。
+  
+  * 建立 Cache: 當我們傳送操作時，回應將會被儲存到本地快取。可使用 fetchPolicy 告知 Apollo Client 去哪裡尋找
+                解析操作所需要的資料（本地或是遠端）。通常，預設為 cache-first，倘若資料不在本地端，方才發出網路請求。
+                fetchPolicy 的屬性是在 Query 元件中設定。
   
   * 保存 Cache
   
