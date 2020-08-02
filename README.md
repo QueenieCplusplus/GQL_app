@@ -319,9 +319,11 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 
 # upload File & Photo 上傳檔案與照片
 
-     apollo-upload-client 在瀏覽器上捕捉檔案，藉由操作，傳給伺服器。
+   * apollo-upload-client 在瀏覽器上捕捉檔案，藉由操作，傳給伺服器。
      
-     apollo-upload-server 免加載，已內建伺服器端，處理由 client 端傳送檔案給伺服器端，可捕捉 stream、mimetype，處理 encode 編碼。
+   * apollo-upload-server 免加載，已內建伺服器端，處理由 client 端傳送檔案給伺服器端，可捕捉 stream、mimetype，處理 encode 編碼。
+     
+   https://github.com/QueenieCplusplus/GQL_api
 
 # Security 安全性
 
