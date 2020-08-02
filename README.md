@@ -3,6 +3,10 @@ Graph QL
 
 ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
+# Jump-Try
+
+快速的玩法是使用 cURL 抓取資料建構網頁，並用 graphql-request 套件建構 app 內容。
+
 # Apollo || Relay
 
 兩者都是用來解決 GQL 沒有多的路由的問題，每一個資料都是用單一端點傳送與接收的，所以無法將路由回傳的資料放在用來請求它的 url 底下，而 Apollo 或是 Relay 這兩個方案提供了（使用本地化）快取的解決方案。
