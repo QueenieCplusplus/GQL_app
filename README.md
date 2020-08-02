@@ -35,7 +35,8 @@ Apollo 支援 React、 iOS、 Android。
   * 保存 Cache
   
           // 從 apollo-cache-persist 匯入 persistCache 方法，將 cache 實例連同 storage 位置一同傳入
-          // persistCache 方法。
+          // persistCache 方法。快取存放在瀏覽器的 pesistCache 存放區。
+          // 啟動 app 時，可見到快取的值存放在快取區內。
 
           import { persistCache } from 'apollo-cache-persist';
           
