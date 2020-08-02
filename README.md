@@ -7,7 +7,10 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
 Relay 是 FB 研發作為串接 GQL 與 React 的框架，也推薦使用。
 
-# user GQL API
+# use GQL API
+
+使用 Query 元件對資料 select ; 使用 Mutation 元件對資料做 update, delete, create。
+使用時會先創建 gql 特有的 type，如下的 a_mutaion_type 和 a_query_type。
 
         import { request } from 'graphql-request'
 
