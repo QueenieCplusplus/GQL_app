@@ -70,6 +70,12 @@ Apollo 支援 React、 iOS、 Android。
                 
 # GQL & React
 
+匯入模組，建立 App 元件，App 會對應以屬性傳入的 users，接著建立含有 user 的 avatar 和 name 的 div 元素。
+render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，並以特性將 allUser 傳入。
+
+按鈕有個 onClick 事件，呼叫 addUser 函式，呼叫時會傳送 mutation 元件，並且回傳時會呼叫 methodCalled 這
+函式為使用者發出 render 函式的需求，並且用新的使用者串列 allUsers =[] 來為 App 運算繪製 <App/>。
+
         import React from 'react'
         import ReactDOM from 'react-dom'
         import obove mentioned module or codeline
@@ -80,9 +86,35 @@ Apollo 支援 React、 iOS、 Android。
 
                       {fetch data hereby}
 
-                      <button/>
+                      <button onClick = {addUser}/>
 
                 </div>
+                
+         const render = ({ allUsers =[] }) => 
+               
+               ReactDOM.render(
+               
+                   <App users = { allUsers } />,
+                   document.getElementById('root')
+               
+               
+               )
+               
+          const addUser = () => 
+               
+               request(url, mutation, {id: 318})
+                  .then(methodCalled)
+                  .catch(console.error)
+                  
+                  
+          const methodCalled = () =>
+                
+                request(url, query)
+                   .then(render)
+                   .catch(console.error)
+            
+          methodCalled()
+                   
 
 # map loop
 
