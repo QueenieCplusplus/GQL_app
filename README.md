@@ -336,9 +336,18 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
  * 限制查詢複雜度
  
    
-# PubSub 訂閱服務
+# Pub/Sub || Subscription 訂閱服務或監聽狀態服務 (即時資料傳輸)
 
-(to be continued...)
+即時更新是現代 web 與行動 app 不可或缺的功能，目前即時傳送訊息的技術是 WebSocker，可以使用 TCP 通訊端開啟『雙向通訊通道』，
+這意味著網頁與行動應用程式可以透過一個連結來傳送與接收資料，此技術可以使資訊從伺服器直接推送到網頁上。
+
+HTTP 雖然提供用戶端與伺服器端傳送與接收資料的手段，但 Http 無法幫助我們連接 server 並且監聽 state 的改變。在 WebSocket 發明之前，http req 需要不斷地傳送給伺服器確認狀態是否有改變。
+
+若想監聽狀態是否改變，可選用如下其中一種套件：
+
+* graphql-subscriptions (發布資料讓訂閱者能接收資料)
+
+* subscriptions-transport-ws (在 WebSocket 上傳送訂閱)
 
 
 # githubAuth Codebase 第三方登入功能
