@@ -5,7 +5,7 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
 # Apollo || Relay
 
-兩者都是用來解決 GQL 沒有多的路由的問題，每一個資料都是用單一端點傳送與接收的，所以無法將路由回傳的資料放在用來請求它的 url 底下。
+兩者都是用來解決 GQL 沒有多的路由的問題，每一個資料都是用單一端點傳送與接收的，所以無法將路由回傳的資料放在用來請求它的 url 底下，而 Apollo 或是 Relay 這兩個方案提供了快取的解決方案。
 
 Relay 是 FB 的經驗共享，只與 React 和 React-Native 相容，也推薦使用。
 
