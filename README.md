@@ -43,6 +43,13 @@ Apollo 支援 React、 iOS、 Android。
           const = cache = new InMemoryCache();
           
           pesistCache({cache, storage: localStorage})
+          
+          if(localStorage['apollo-cache-persist']){
+                
+                let cacheData = JSON.parse(localStorage['apollo-cache-persist'])
+                cache.restore(cacheData)
+          
+          }
   
   * 更新 Cache
 
