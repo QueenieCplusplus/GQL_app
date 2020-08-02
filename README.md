@@ -24,7 +24,9 @@ Apollo 支援 React、 iOS、 Android。
   
   * 建立 Cache: 當我們傳送操作時，回應將會被儲存到本地快取。可使用 fetchPolicy 告知 Apollo Client 去哪裡尋找
                 解析操作所需要的資料（本地或是遠端）。通常，預設為 cache-first，倘若資料不在本地端，方才發出網路請求。
-                fetchPolicy 的屬性是在 Query 元件中設定。
+                fetchPolicy 的屬性是在 Query 元件中設定。除了 cache-frist 外，尚有其他可選，如 cache-only、
+                network-only、no-cache (不會將結果存放在本地快取內)、cache-and-network 策略則一定先使用 cache 
+                並且同時發出網路請求。
   
   * 保存 Cache
   
