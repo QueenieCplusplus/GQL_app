@@ -333,4 +333,12 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 
   (to be continued...)
 
+# Security 安全性
 
+ * request timeout 避免大量或者惡意的查詢。
+ 
+ * max size 限制上傳資料的大小。
+ 
+ * 限制查詢深度
+ 
+ * 限制查詢複雜度
