@@ -329,7 +329,7 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 
      apollo-upload-client 在瀏覽器上捕捉檔案，藉由操作，傳給伺服器。
      
-     apollo-upload-server 處理由 client 端傳送檔案給伺服器端。
+     apollo-upload-server 免加載，已內建，處理由 client 端傳送檔案給伺服器端。
 
   (to be continued...)
 
