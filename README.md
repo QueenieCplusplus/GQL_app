@@ -325,7 +325,7 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 
   (to be continued...)
 
-# upload File 上傳檔案
+# upload File & Photo 上傳檔案與照片
 
      apollo-upload-client 在瀏覽器上捕捉檔案，藉由操作，傳給伺服器。
      
@@ -333,6 +333,4 @@ render 函數中 ReactDOM.render 會將 App 運算繪製到 #root 元素內，�
 
   (to be continued...)
 
-# post Photo 張貼照片
 
-  (to be continued...)
