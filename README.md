@@ -29,9 +29,10 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
 
                 addUser(id: $id){
 
-                    id 
-                    name
-                    mailaddress
+                    //id 
+                    //name
+                    //mailaddress
+                    githubLogin
 
 
                 }
@@ -51,7 +52,39 @@ ref: https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/
         request(url, mutation, vary_id)
                 .then(console.log)
                 .catch(console.error)
+                
+                
+# GQL & React
 
+        import React from 'react'
+        import ReactDOM from 'react-dom'
+        import obove mentioned module or codeline
+
+        const App = ({ users = [] }) => 
+
+                <div>
+
+                      {fetch data hereby}
+
+                      <button/>
+
+                </div>
+
+# map loop
+
+如上 {fetch data hereby} 物件的程式碼如下
+
+        { users.map ( user => 
+
+               <div key={user.githubLogin}>
+                    
+                    <img src={user.avatar} alt="" />
+                    
+                    {user.name}
+
+               </div>
+
+        }
 
 # Code
 
