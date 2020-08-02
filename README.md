@@ -349,6 +349,7 @@ HTTP 雖然提供用戶端與伺服器端傳送與接收資料的手段，但 Ht
 
 * subscriptions-transport-ws (在 WebSocket 上傳送訂閱)
 
+   https://github.com/QueenieCplusplus/GQL_api
 
 # githubAuth Codebase 第三方登入功能
 
