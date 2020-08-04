@@ -350,6 +350,8 @@ https://github.com/QueenieCplusplus/Backend_Script/tree/master/Auth
 
  * request timeout 避免大量或者惡意的查詢。
  
+   https://github.com/QueenieCplusplus/Backend_Script/blob/master/Security/timeout.js
+ 
  * max size 限制上傳資料的大小。
  
    https://github.com/QueenieCplusplus/Backend_Script/blob/master/Security/dataLimit.js
