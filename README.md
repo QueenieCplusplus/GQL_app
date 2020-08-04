@@ -344,7 +344,7 @@ HTTP 雖然提供用戶端與伺服器端傳送與接收資料的手段，但 Ht
 
 # githubAuth Codebase 第三方登入功能
 
-  (to be continued...)
+https://github.com/QueenieCplusplus/Backend_Script/tree/master/Auth
   
 # Security 安全性
 
